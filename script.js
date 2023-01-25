@@ -22,7 +22,7 @@ xhr.onreadystatechange = function() {
     console.log(xhr.responseText);
     // Inject Code blah blah blah
 
-    document.getElementById("response").innerHTML = "<p>" + xhr + "</p>";
+    document.getElementById("response").innerHTML = "<p>" + xhr.responseText + "</p>";
 
 
 
