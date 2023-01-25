@@ -21,8 +21,11 @@ xhr.onreadystatechange = function() {
   if (xhr.readyState === 4 && xhr.status === 200) {
     console.log(xhr.responseText);
     // Inject Code blah blah blah
+    
+    var response = xhr.responseText;
+    var jsonResponse = JSON.parse(response);
 
-    document.getElementById("response").innerHTML = "<p>" + xhr.responseText + "</p>";
+    document.getElementById("response").innerHTML = "<p>" + jsonResponse.data + "</p>";
 
 
 
